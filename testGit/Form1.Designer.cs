@@ -33,12 +33,12 @@
             this.btnDay3 = new System.Windows.Forms.Button();
             this.btnDay4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.grv1 = new System.Windows.Forms.DataGridView();
+            this.grv2 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grv1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grv2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDay1
@@ -49,6 +49,7 @@
             this.btnDay1.TabIndex = 0;
             this.btnDay1.Text = "19/12/2022";
             this.btnDay1.UseVisualStyleBackColor = true;
+            this.btnDay1.Click += new System.EventHandler(this.btnDay1_Click);
             // 
             // btnDay2
             // 
@@ -86,25 +87,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Ngày";
             // 
-            // dataGridView1
+            // grv1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(162, 109);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(550, 146);
-            this.dataGridView1.TabIndex = 2;
+            this.grv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grv1.Location = new System.Drawing.Point(162, 109);
+            this.grv1.Name = "grv1";
+            this.grv1.RowHeadersWidth = 51;
+            this.grv1.RowTemplate.Height = 24;
+            this.grv1.Size = new System.Drawing.Size(550, 146);
+            this.grv1.TabIndex = 2;
             // 
-            // dataGridView2
+            // grv2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(162, 298);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(550, 146);
-            this.dataGridView2.TabIndex = 3;
+            this.grv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grv2.Location = new System.Drawing.Point(162, 298);
+            this.grv2.Name = "grv2";
+            this.grv2.RowHeadersWidth = 51;
+            this.grv2.RowTemplate.Height = 24;
+            this.grv2.Size = new System.Drawing.Size(550, 146);
+            this.grv2.TabIndex = 3;
             // 
             // label2
             // 
@@ -133,8 +134,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grv2);
+            this.Controls.Add(this.grv1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDay4);
             this.Controls.Add(this.btnDay3);
@@ -142,8 +143,8 @@
             this.Controls.Add(this.btnDay1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grv1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grv2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,8 +157,8 @@
         private System.Windows.Forms.Button btnDay3;
         private System.Windows.Forms.Button btnDay4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView grv1;
+        private System.Windows.Forms.DataGridView grv2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
